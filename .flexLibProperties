@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties includeAllClasses="true" useMultiPlatformConfig="false" version="3">
+  <includeClasses>
+    <classEntry path="com.ourgame.mahjong.libaray.DataExchange"/>
+    <classEntry path="com.ourgame.mahjong.libaray.vo.UserInfo"/>
+    <classEntry path="com.ourgame.mahjong.libaray.vo.socket.MJDataResolver"/>
+    <classEntry path="com.ourgame.mahjong.libaray.vo.socket.MJDataPack"/>
+    <classEntry path="com.ourgame.mahjong.libaray.enum.ChatType"/>
+    <classEntry path="com.ourgame.mahjong.libaray.enum.GameType"/>
+    <classEntry path="com.ourgame.mahjong.libaray.enum.RoomType"/>
+    <classEntry path="com.ourgame.mahjong.libaray.vo.GameInfo"/>
+    <classEntry path="com.ourgame.mahjong.libaray.SocketProcessor"/>
+    <classEntry path="com.ourgame.mahjong.libaray.events.SocketEvent"/>
+    <classEntry path="com.ourgame.mahjong.libaray.ITableProxy"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>
