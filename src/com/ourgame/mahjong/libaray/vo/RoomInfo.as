@@ -1,5 +1,7 @@
 package com.ourgame.mahjong.libaray.vo
 {
+	import com.ourgame.mahjong.libaray.enum.GameType;
+	import com.ourgame.mahjong.libaray.enum.RoomType;
 	import com.wecoit.data.ArrayList;
 	import com.wecoit.data.ValueObject;
 	
@@ -21,11 +23,19 @@ package com.ourgame.mahjong.libaray.vo
 		
 		// -------------------------------------------------------------------------------------------------------- 变量
 		
+		/**
+		 * ID
+		 * @return
+		 */
 		public function get id():uint
 		{
 			return this.getProperty("id", 0);
 		}
 		
+		/**
+		 * 名称
+		 * @return
+		 */
 		public function get name():String
 		{
 			return this.getProperty("name", "");
@@ -36,9 +46,13 @@ package com.ourgame.mahjong.libaray.vo
 			this.setProperty("name", value);
 		}
 		
+		/**
+		 * RoomType，房间类型
+		 * @return
+		 */
 		public function get type():uint
 		{
-			return this.getProperty("type", 0);
+			return this.getProperty("type", RoomType.AUTO);
 		}
 		
 		public function set type(value:uint):void
@@ -46,9 +60,13 @@ package com.ourgame.mahjong.libaray.vo
 			this.setProperty("type", value);
 		}
 		
+		/**
+		 * GameType，游戏类型
+		 * @return
+		 */
 		public function get gameType():uint
 		{
-			return this.getProperty("gameType", 0);
+			return this.getProperty("gameType", GameType.BloodRiver);
 		}
 		
 		public function set gameType(value:uint):void
@@ -56,6 +74,10 @@ package com.ourgame.mahjong.libaray.vo
 			this.setProperty("gameType", value);
 		}
 		
+		/**
+		 * 玩家人数
+		 * @return
+		 */
 		public function get playerCount():uint
 		{
 			return this.getProperty("playerCount", 0);
@@ -66,6 +88,10 @@ package com.ourgame.mahjong.libaray.vo
 			this.setProperty("playerCount", value);
 		}
 		
+		/**
+		 * 带入值
+		 * @return
+		 */
 		public function get buyin():uint
 		{
 			return this.getProperty("buyin", 0);
@@ -76,6 +102,10 @@ package com.ourgame.mahjong.libaray.vo
 			this.setProperty("buyin", value);
 		}
 		
+		/**
+		 * 货币筹码兑换比例
+		 * @return
+		 */
 		public function get rate():uint
 		{
 			return this.getProperty("rate", 0);
@@ -86,6 +116,10 @@ package com.ourgame.mahjong.libaray.vo
 			this.setProperty("rate", value);
 		}
 		
+		/**
+		 * 桌子列表
+		 * @return
+		 */
 		public function get tableList():ArrayList
 		{
 			return this.getProperty("tableList", new ArrayList());

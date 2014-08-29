@@ -24,41 +24,73 @@ package com.ourgame.mahjong.libaray.vo
 		
 		// -------------------------------------------------------------------------------------------------------- 属性
 		
+		/**
+		 * ID
+		 * @return
+		 */
 		public function get id():uint
 		{
 			return this.getProperty("id", 0);
 		}
 		
+		/**
+		 * 名称
+		 * @return
+		 */
 		public function get name():String
 		{
 			return this.getProperty("name", "");
 		}
 		
+		/**
+		 * 路径
+		 * @return
+		 */
 		public function get path():String
 		{
 			return this.getProperty("path", "");
 		}
 		
+		/**
+		 * 地址
+		 * @return
+		 */
 		public function get url():String
 		{
 			return this.getProperty("url", "");
 		}
 		
+		/**
+		 * 主程序
+		 * @return
+		 */
 		public function get main():DisplayObject
 		{
 			return this.assets.getValue(this.name);
 		}
 		
+		/**
+		 * 资源列表
+		 * @return
+		 */
 		public function get assets():HashMap
 		{
 			return this.getProperty("assets", new HashMap());
 		}
 		
+		/**
+		 * 交换数据
+		 * @return
+		 */
 		public function get data():DataExchange
 		{
 			return this.getProperty("data", new DataExchange());
 		}
 		
+		/**
+		 * 域
+		 * @return
+		 */
 		public function get domain():ApplicationDomain
 		{
 			return this.getProperty("domain", new ApplicationDomain(ApplicationDomain.currentDomain));

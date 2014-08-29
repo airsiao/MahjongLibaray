@@ -1,5 +1,6 @@
 package com.ourgame.mahjong.libaray.vo
 {
+	import com.ourgame.mahjong.libaray.enum.PlayMode;
 	import com.wecoit.data.ArrayList;
 	import com.wecoit.data.ValueObject;
 	
@@ -19,6 +20,24 @@ package com.ourgame.mahjong.libaray.vo
 		
 		// -------------------------------------------------------------------------------------------------------- 属性
 		
+		/**
+		 * PlayMode，游戏模式
+		 * @return
+		 */
+		public function get mode():uint
+		{
+			return this.getProperty("mode", PlayMode.ONLINE);
+		}
+		
+		public function set mode(value:uint):void
+		{
+			this.setProperty("mode", value);
+		}
+		
+		/**
+		 * ID
+		 * @return
+		 */
 		public function get id():uint
 		{
 			return this.getProperty("id", 0);
@@ -29,6 +48,10 @@ package com.ourgame.mahjong.libaray.vo
 			this.setProperty("id", value);
 		}
 		
+		/**
+		 * 名称
+		 * @return
+		 */
 		public function get name():String
 		{
 			return this.getProperty("name", "");
@@ -39,6 +62,10 @@ package com.ourgame.mahjong.libaray.vo
 			this.setProperty("name", value);
 		}
 		
+		/**
+		 * 玩家人数
+		 * @return
+		 */
 		public function get playerCount():uint
 		{
 			return this.getProperty("playerCount", 0);
@@ -49,6 +76,10 @@ package com.ourgame.mahjong.libaray.vo
 			this.setProperty("playerCount", value);
 		}
 		
+		/**
+		 * 最大玩家人数
+		 * @return
+		 */
 		public function get maxPlayerCount():uint
 		{
 			return this.getProperty("maxPlayerCount", 0);
@@ -59,6 +90,10 @@ package com.ourgame.mahjong.libaray.vo
 			this.setProperty("maxPlayerCount", value);
 		}
 		
+		/**
+		 * 带入值
+		 * @return
+		 */
 		public function get buyinCoins():uint
 		{
 			return this.getProperty("buyinCoins", 0);
@@ -69,6 +104,10 @@ package com.ourgame.mahjong.libaray.vo
 			this.setProperty("buyinCoins", value);
 		}
 		
+		/**
+		 * 带入筹码量
+		 * @return
+		 */
 		public function get buyinChips():uint
 		{
 			return this.getProperty("buyinChips", 0);
@@ -79,6 +118,10 @@ package com.ourgame.mahjong.libaray.vo
 			this.setProperty("buyinChips", value);
 		}
 		
+		/**
+		 * 货币筹码兑换比例
+		 * @return
+		 */
 		public function get rate():uint
 		{
 			return this.getProperty("rate", 0);
@@ -89,6 +132,10 @@ package com.ourgame.mahjong.libaray.vo
 			this.setProperty("rate", value);
 		}
 		
+		/**
+		 * 最低带入值（小于该值不带入将被踢出）
+		 * @return
+		 */
 		public function get buyoutChips():uint
 		{
 			return this.getProperty("buyoutChips", 0);
@@ -99,6 +146,10 @@ package com.ourgame.mahjong.libaray.vo
 			this.setProperty("buyoutChips", value);
 		}
 		
+		/**
+		 * 排序
+		 * @return
+		 */
 		public function get order():int
 		{
 			return this.getProperty("order", 0);
@@ -109,6 +160,10 @@ package com.ourgame.mahjong.libaray.vo
 			this.setProperty("order", value);
 		}
 		
+		/**
+		 * 用户列表
+		 * @return
+		 */
 		public function get userList():ArrayList
 		{
 			return this.getProperty("userList", new ArrayList());
@@ -119,6 +174,10 @@ package com.ourgame.mahjong.libaray.vo
 			this.setProperty("userList", value);
 		}
 		
+		/**
+		 * 当前座位号
+		 * @return
+		 */
 		public function get currentSeat():uint
 		{
 			return this.getProperty("currentSeat", 0);

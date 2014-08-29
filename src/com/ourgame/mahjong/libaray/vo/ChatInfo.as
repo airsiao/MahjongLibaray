@@ -20,6 +20,10 @@ package com.ourgame.mahjong.libaray.vo
 		
 		// -------------------------------------------------------------------------------------------------------- 变量
 		
+		/**
+		 * ChatType，消息类型
+		 * @default
+		 */
 		private var _type:uint;
 		
 		public function get type():uint
@@ -27,6 +31,10 @@ package com.ourgame.mahjong.libaray.vo
 			return this._type;
 		}
 		
+		/**
+		 * 消息内容
+		 * @default
+		 */
 		private var _content:String;
 		
 		public function get content():String
@@ -34,6 +42,10 @@ package com.ourgame.mahjong.libaray.vo
 			return this._content;
 		}
 		
+		/**
+		 * 发送者ID
+		 * @default
+		 */
 		private var _sender:UInt64;
 		
 		public function get sender():UInt64
@@ -41,6 +53,10 @@ package com.ourgame.mahjong.libaray.vo
 			return this._sender;
 		}
 		
+		/**
+		 * 接收者ID（私聊）
+		 * @default
+		 */
 		private var _receiver:UInt64;
 		
 		public function get receiver():UInt64
@@ -48,6 +64,10 @@ package com.ourgame.mahjong.libaray.vo
 			return this._receiver;
 		}
 		
+		/**
+		 * 发送者昵称
+		 * @default
+		 */
 		private var _senderName:String;
 		
 		public function get senderName():String
@@ -60,6 +80,10 @@ package com.ourgame.mahjong.libaray.vo
 			this._senderName = value;
 		}
 		
+		/**
+		 * 接收者昵称（私聊）
+		 * @default
+		 */
 		private var _receiverName:String;
 		
 		public function get receiverName():String

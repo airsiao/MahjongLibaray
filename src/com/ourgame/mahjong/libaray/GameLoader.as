@@ -87,8 +87,16 @@ package com.ourgame.mahjong.libaray
 			return this._countTotal;
 		}
 		
+		/**
+		 * 加载游戏信息
+		 * @default
+		 */
 		public var info:GameInfo;
 		
+		/**
+		 * 当前加载资源
+		 * @default
+		 */
 		public var current:XmlValue;
 		
 		// -------------------------------------------------------------------------------------------------------- 变量

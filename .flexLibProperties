@@ -12,6 +12,7 @@
     <classEntry path="com.ourgame.mahjong.libaray.SocketProcessor"/>
     <classEntry path="com.ourgame.mahjong.libaray.events.SocketEvent"/>
     <classEntry path="com.ourgame.mahjong.libaray.ITableProxy"/>
+    <classEntry path="com.ourgame.mahjong.libaray.enum.PlayMode"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>
