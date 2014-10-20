@@ -1,6 +1,5 @@
 package com.ourgame.mahjong.libaray.vo
 {
-	import com.ourgame.mahjong.libaray.enum.PlayMode;
 	import com.wecoit.data.ArrayList;
 	import com.wecoit.data.ValueObject;
 	
@@ -19,20 +18,6 @@ package com.ourgame.mahjong.libaray.vo
 		// -------------------------------------------------------------------------------------------------------- 静态函数
 		
 		// -------------------------------------------------------------------------------------------------------- 属性
-		
-		/**
-		 * PlayMode，游戏模式
-		 * @return
-		 */
-		public function get mode():uint
-		{
-			return this.getProperty("mode", PlayMode.ONLINE);
-		}
-		
-		public function set mode(value:uint):void
-		{
-			this.setProperty("mode", value);
-		}
 		
 		/**
 		 * ID
@@ -247,6 +232,16 @@ package com.ourgame.mahjong.libaray.vo
 			}
 			
 			return null;
+		}
+		
+		/**
+		 * 获取指定座位的位置
+		 * @param seat 座位号
+		 * @return
+		 */
+		public function getSeatPosition(seat:uint):uint
+		{
+			return (seat + 4 - this.currentSeat) % 4;
 		}
 	
 		// -------------------------------------------------------------------------------------------------------- 函数

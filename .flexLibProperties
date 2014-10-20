@@ -13,6 +13,7 @@
     <classEntry path="com.ourgame.mahjong.libaray.events.SocketEvent"/>
     <classEntry path="com.ourgame.mahjong.libaray.ITableProxy"/>
     <classEntry path="com.ourgame.mahjong.libaray.enum.PlayMode"/>
+    <classEntry path="com.ourgame.mahjong.libaray.IGameProxy"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>

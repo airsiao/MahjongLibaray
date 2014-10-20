@@ -201,8 +201,7 @@ package com.ourgame.mahjong.libaray
 			{
 				if (resolver.content is XML)
 				{
-					var config:Config = new Config(resolver.content);
-					this.queue = config.getOptions();
+					this.queue = new Config(resolver.content).getOptions();
 					
 					this._countLoaded = 0;
 					this._countTotal = this.queue.length;
@@ -253,7 +252,7 @@ package com.ourgame.mahjong.libaray
 		
 		private function process():void
 		{
-			if (this.connected)
+			if (this.connected || this.queue.length < 1)
 			{
 				return;
 			}

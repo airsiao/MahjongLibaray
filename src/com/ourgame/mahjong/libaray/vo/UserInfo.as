@@ -64,12 +64,12 @@ package com.ourgame.mahjong.libaray.vo
 		 * 筹码量
 		 * @return
 		 */
-		public function get chips():uint
+		public function get chips():int
 		{
 			return this.getProperty("chips", 0);
 		}
 		
-		public function set chips(value:uint):void
+		public function set chips(value:int):void
 		{
 			this.setProperty("chips", value);
 		}

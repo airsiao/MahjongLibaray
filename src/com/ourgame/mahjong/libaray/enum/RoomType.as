@@ -10,12 +10,12 @@ package com.ourgame.mahjong.libaray.enum
 		/**
 		 * 自动配桌
 		 */
-		public static const AUTO:uint = 0;
+		public static const AUTO:uint = 1;
 		
 		/**
 		 * 手动配桌
 		 */
-		public static const MANUAL:uint = 1;
+		public static const MANUAL:uint = 2;
 	
 	}
 }

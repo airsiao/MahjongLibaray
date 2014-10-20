@@ -120,6 +120,8 @@ package com.ourgame.mahjong.libaray
 				this.client.close();
 			}
 			
+			Log.debug("Socket", "请求连接", host, port);
+			
 			this.client.connect(host, port);
 		}
 		

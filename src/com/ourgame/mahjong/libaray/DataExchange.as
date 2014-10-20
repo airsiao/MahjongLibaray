@@ -1,5 +1,6 @@
 package com.ourgame.mahjong.libaray
 {
+	import com.netease.protobuf.UInt64;
 	import com.ourgame.mahjong.libaray.vo.RoomInfo;
 	import com.ourgame.mahjong.libaray.vo.TableInfo;
 	import com.ourgame.mahjong.libaray.vo.UserInfo;
@@ -33,17 +34,25 @@ package com.ourgame.mahjong.libaray
 		
 		public var channelID:uint;
 		
+		public var playMode:uint;
+		
 		public var roomList:ArrayList;
 		
 		public var room:RoomInfo;
 		
 		public var table:TableInfo;
 		
+		public var gameID:UInt64;
+		
+		public var serverID:UInt64;
+		
 		public var user:UserInfo;
 		
 		public var socket:SocketProcessor;
 		
 		public var tableProxy:ITableProxy;
+		
+		public var gameProxy:IGameProxy;
 		
 		// -------------------------------------------------------------------------------------------------------- 变量
 		
