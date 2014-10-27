@@ -1,6 +1,7 @@
 package com.ourgame.mahjong.libaray
 {
 	import com.ourgame.mahjong.libaray.vo.GameInfo;
+	import com.wecoit.core.FlashPlayer;
 	import com.wecoit.data.Config;
 	import com.wecoit.data.XmlValue;
 	import com.wecoit.events.BytesEvent;
@@ -261,8 +262,9 @@ package com.ourgame.mahjong.libaray
 			
 			var path:String = (this.current.attribute("path") == null) ? "" : this.current.attribute("path");
 			var ver:String = (this.current.attribute("ver") == null) ? new Date().time.toString() : this.current.attribute("ver");
+			var url:String = (FlashPlayer.isDebug) ? stampUrl(this.info.path + path + this.current.value) : this.info.path + path + this.current.value + "?ver=" + ver;
 			
-			this.stream.load(new URLRequest(this.info.path + path + this.current.value + "?ver=" + ver));
+			this.stream.load(new URLRequest(url));
 		}
 	
 	}

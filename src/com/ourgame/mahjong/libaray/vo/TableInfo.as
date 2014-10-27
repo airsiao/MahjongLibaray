@@ -241,7 +241,7 @@ package com.ourgame.mahjong.libaray.vo
 		 */
 		public function getSeatPosition(seat:uint):uint
 		{
-			return (seat + 4 - this.currentSeat) % 4;
+			return (seat + 4 - this.currentSeat) % 4 + 1;
 		}
 	
 		// -------------------------------------------------------------------------------------------------------- 函数

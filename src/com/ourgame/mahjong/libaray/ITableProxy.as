@@ -8,6 +8,8 @@ package com.ourgame.mahjong.libaray
 	public interface ITableProxy
 	{
 		
+		function ready():void;
+		
 		function leave():void;
 	
 	}
