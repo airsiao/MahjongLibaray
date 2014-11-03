@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <flexLibProperties includeAllClasses="true" useMultiPlatformConfig="false" version="3">
   <includeClasses>
-    <classEntry path="com.ourgame.mahjong.libaray.DataExchange"/>
     <classEntry path="com.ourgame.mahjong.libaray.vo.UserInfo"/>
     <classEntry path="com.ourgame.mahjong.libaray.vo.socket.MJDataResolver"/>
     <classEntry path="com.ourgame.mahjong.libaray.vo.socket.MJDataPack"/>
@@ -14,6 +13,7 @@
     <classEntry path="com.ourgame.mahjong.libaray.ITableProxy"/>
     <classEntry path="com.ourgame.mahjong.libaray.enum.PlayMode"/>
     <classEntry path="com.ourgame.mahjong.libaray.IGameProxy"/>
+    <classEntry path="com.ourgame.mahjong.libaray.data.CommonData"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>

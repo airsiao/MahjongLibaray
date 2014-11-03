@@ -1,6 +1,5 @@
 package com.ourgame.mahjong.libaray.vo
 {
-	import com.ourgame.mahjong.libaray.DataExchange;
 	import com.wecoit.data.HashMap;
 	import com.wecoit.data.ValueObject;
 	import com.wecoit.data.XmlValue;
@@ -79,15 +78,6 @@ package com.ourgame.mahjong.libaray.vo
 		}
 		
 		/**
-		 * 交换数据
-		 * @return
-		 */
-		public function get data():DataExchange
-		{
-			return this.getProperty("data", new DataExchange());
-		}
-		
-		/**
 		 * 域
 		 * @return
 		 */
@@ -108,7 +98,7 @@ package com.ourgame.mahjong.libaray.vo
 		/**
 		 * 构造函数
 		 */
-		public function GameInfo(info:XmlValue, data:DataExchange)
+		public function GameInfo(info:XmlValue)
 		{
 			super();
 			
@@ -116,7 +106,6 @@ package com.ourgame.mahjong.libaray.vo
 			this.setProperty("name", info.name);
 			this.setProperty("path", info.attribute("path"));
 			this.setProperty("url", info.value);
-			this.setProperty("data", data);
 		}
 	
 		// -------------------------------------------------------------------------------------------------------- 方法
