@@ -1,5 +1,6 @@
 package com.ourgame.mahjong.libaray.vo
 {
+	import com.ourgame.mahjong.libaray.data.CommonData;
 	import com.wecoit.data.HashMap;
 	import com.wecoit.data.ValueObject;
 	import com.wecoit.data.XmlValue;
@@ -83,7 +84,7 @@ package com.ourgame.mahjong.libaray.vo
 		 */
 		public function get domain():ApplicationDomain
 		{
-			return this.getProperty("domain", new ApplicationDomain(ApplicationDomain.currentDomain));
+			return this.getProperty("domain", new ApplicationDomain(CommonData.domain));
 		}
 		
 		public function set domain(value:ApplicationDomain):void

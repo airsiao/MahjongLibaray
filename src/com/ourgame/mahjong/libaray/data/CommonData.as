@@ -10,12 +10,20 @@ package com.ourgame.mahjong.libaray.data
 	import com.ourgame.mahjong.libaray.vo.UserInfo;
 	import com.wecoit.data.ArrayList;
 	
+	import flash.system.ApplicationDomain;
+	
 	/**
 	 * 公共数据
 	 * @author SiaoLeon
 	 */
 	public class CommonData
 	{
+		
+		/**
+		 * 基础域
+		 * @default
+		 */
+		public static var domain:ApplicationDomain;
 		
 		/**
 		 * 基础游戏信息

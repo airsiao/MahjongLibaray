@@ -131,6 +131,20 @@ package com.ourgame.mahjong.libaray.vo
 		}
 		
 		/**
+		 * 形象
+		 * @return
+		 */
+		public function get avatar():String
+		{
+			return this.getProperty("avatar", "");
+		}
+		
+		public function set avatar(value:String):void
+		{
+			this.setProperty("avatar", value);
+		}
+		
+		/**
 		 * 等级
 		 * @return
 		 */
